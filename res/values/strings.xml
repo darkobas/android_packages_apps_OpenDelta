@@ -74,5 +74,5 @@
     <string name="dev_mode_login_password">Password</string>
     <string name="dev_mode_remember_dev_login">Remember</string>
     <string name="dev_mode_login_wrong_pw">Wrong password</string>
-    <string name="dev_mode_logout_dev_mode">Log out of dev mode?</string>
+    <string name="dev_mode_logout_dev_mode">Log out of developer mode?</string>
 </resources>
