@@ -18,6 +18,7 @@ fi
 # ------ CONFIGURATION ------
 
 HOME=/data/L
+DELTAHOME=/home/darkobas/
 HOMEOUT=/android/PSD/
 
 BIN_JAVA=java
@@ -27,10 +28,10 @@ BIN_ZIPADJUST=$HOME/delta/zipadjust
 
 FILE_MATCH=psd_*.zip
 PATH_CURRENT=$HOMEOUT/out/L/target/product/$DEVICE
-PATH_LAST=$HOME/delta/last/$DEVICE
+PATH_LAST=$DELTAHOME/delta/last/$DEVICE
 
-KEY_X509=$HOME/.keys/platform.x509.pem
-KEY_PK8=$HOME/.keys/platform.pk8
+KEY_X509=$DELTAHOME/.keys/platform.x509.pem
+KEY_PK8=$DELTAHOME/.keys/platform.pk8
 
 # ------ PROCESS ------
 

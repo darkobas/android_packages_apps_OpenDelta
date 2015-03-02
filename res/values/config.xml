@@ -27,6 +27,9 @@
     <!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
     <item type="bool" name="apply_signature">false</item>
     
+    <!-- (TWRP) Set this to false if the keys below aren't your ROM's -->
+    <item type="bool" name="inject_signature_enable">false</item>
+
     <!-- (TWRP) Verification signatures to inject. Produced by 'dumpkey.jar' (out/host) of the platform.x509 key used to sign the ZIP file -->
     <string name="inject_signature_keys"></string>
     
