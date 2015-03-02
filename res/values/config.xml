@@ -4,31 +4,28 @@
     <item type="bool" name="debug_output">true</item>
 
     <!-- Property to read for ROM version -->
-    <string name="property_version">ro.delta.version</string>
+    <string name="property_version">ro.psd.version</string>
 
     <!-- Property to read for device identifier -->
-    <string name="property_device">ro.product.device</string>
+    <string name="property_device">ro.product.name</string>
 
     <!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
-    <string name="filename_base">SimpleAOSP-L-Build%s</string>
+    <string name="filename_base">psd_%s</string>
 
     <!-- Path deltas are stored, relative to sdcard root -->
     <string name="path_base">OpenDelta</string>
 
     <!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_delta">http://builds.hubdroid.com/SimpleAOSP-L/delta/%s/</string>
+    <string name="url_base_delta">http://renderserver.net/devs/darkobas/delta/%s/</string>
 
     <!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_update">http://builds.hubdroid.com/SimpleAOSP-L/delta/%s/</string>
+    <string name="url_base_update">http://renderserver.net/devs/darkobas/delta/%s/</string>
 
     <!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_full">http://builds.hubdroid.com/SimpleAOSP-L/builds/%s/</string>
+    <string name="url_base_full">http://renderserver.net/devs/darkobas/%s/</string>
 
     <!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
     <item type="bool" name="apply_signature">false</item>
-    
-    <!-- (TWRP) Set this to false if the keys below aren't your ROM's -->
-    <item type="bool" name="inject_signature_enable">false</item>
     
     <!-- (TWRP) Verification signatures to inject. Produced by 'dumpkey.jar' (out/host) of the platform.x509 key used to sign the ZIP file -->
     <string name="inject_signature_keys"></string>
@@ -45,22 +42,22 @@
     	repaired, this is a stop-gap solution.
     -->
     <string-array name="keep_screen_on_devices">
-        <item>mako</item>
-        <item>hammerhead</item>		
-		<item>shamu</item>
+        <item>bacon</item>
+        <item>klte</item>
+        <item>d855</item>
+        <item>d802</item>
         <item>flo</item>
-        <item>flounder</item>
     </string-array>
 
     <!-- dev-mode additions -->
-    <string name="dev_mode_pw">pa33w0rd</string>
+    <string name="dev_mode_pw">lalala</string>
 
     <!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base || for dev mode!-->
-    <string name="url_base_delta_dev">http://builds.hubdroid.com/SimpleAOSP-L/deltadev/%s/</string>
+    <string name="url_base_delta_dev">http://renderserver.net/devs/darkobas/deltadev/%s/</string>
 
     <!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base || for dev mode! -->
-    <string name="url_base_update_dev">http://builds.hubdroid.com/SimpleAOSP-L/deltadev/%s/</string>
+    <string name="url_base_update_dev">http://renderserver.net/devs/darkobas/deltadev/%s/</string>
 
     <!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_full_dev">http://builds.hubdroid.com/SimpleAOSP-L/buildsdev/%s/</string>
+    <string name="url_base_full_dev">http://renderserver.net/devs/darkobas/buildsdev/%s/</string>
 </resources>
