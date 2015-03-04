@@ -10,7 +10,7 @@
     <string name="property_device">ro.product.name</string>
 
     <!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
-    <string name="filename_base">psd_%s</string>
+    <string name="filename_base">psd_</string>
 
     <!-- Path deltas are stored, relative to sdcard root -->
     <string name="path_base">OpenDelta</string>
