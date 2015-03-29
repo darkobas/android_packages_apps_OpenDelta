@@ -4,13 +4,13 @@
     <item type="bool" name="debug_output">true</item>
 
     <!-- Property to read for ROM version -->
-    <string name="property_version">ro.psd.version</string>
+    <string name="property_version">ro.dud.version</string>
 
     <!-- Property to read for device identifier -->
     <string name="property_device">ro.product.name</string>
 
     <!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
-    <string name="filename_base">psd_</string>
+    <string name="filename_base">dud_</string>
 
     <!-- Path deltas are stored, relative to sdcard root -->
     <string name="path_base">OpenDelta</string>
