@@ -7,7 +7,7 @@
     <string name="property_version">ro.dud.version</string>
 
     <!-- Property to read for device identifier -->
-    <string name="property_device">ro.product.name</string>
+    <string name="property_device">ro.product.device</string>
 
     <!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
     <string name="filename_base">dud_</string>
