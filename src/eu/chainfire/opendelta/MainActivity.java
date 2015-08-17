@@ -36,6 +36,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.Html;
 import android.text.format.DateFormat;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -50,6 +51,8 @@ import java.util.Locale;
 public class MainActivity extends Activity {
     private TextView title = null;
     private TextView sub = null;
+    private TextView romdownload1 = null;
+    private TextView romdownload2 = null;
     private ProgressBar progress = null;
     private Button checkNow = null;
     private Button flashNow = null;
@@ -75,6 +78,16 @@ public class MainActivity extends Activity {
 
         title = (TextView) findViewById(R.id.text_title);
         sub = (TextView) findViewById(R.id.text_sub);
+
+        TextView romdownload1 = (TextView) findViewById(R.id.text_romdownload1);
+        TextView romdownload2 = (TextView) findViewById(R.id.text_romdownload2);
+        String linkText1 = "Manual download full ZIP: <a href='http://renderserver.net/?dir=devs/darkobas'>RenderServer.net</a>";
+        String linkText2 = " or <a href='http://basketbuild.com/devs/darkobas'>BasketBuild.com</a>";
+        romdownload1.setText(Html.fromHtml(linkText1));
+        romdownload2.setText(Html.fromHtml(linkText2));
+        romdownload1.setMovementMethod(LinkMovementMethod.getInstance());
+        romdownload2.setMovementMethod(LinkMovementMethod.getInstance());
+
         progress = (ProgressBar) findViewById(R.id.progress);
         checkNow = (Button) findViewById(R.id.button_check_now);
         flashNow = (Button) findViewById(R.id.button_flash_now);
