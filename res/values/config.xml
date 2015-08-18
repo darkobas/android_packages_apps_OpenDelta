@@ -22,7 +22,7 @@
     <string name="url_base_update">http://delta.renderserver.net/darkobas/delta/%s/</string>
 
     <!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-    <string name="url_base_full">http://renderserver.net/?dir=devs/darkobas/%s/</string>
+    <string name="url_base_full">https://basketbuild.com/dl/devs?dl=darkobas/%s/</string>
 
     <!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
     <item type="bool" name="apply_signature">true</item>
