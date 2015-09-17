@@ -399,7 +399,6 @@ public class UpdateService
             HttpConnectionParams.setSoTimeout(params, 10000);
             HttpClient client = new DefaultHttpClient(params);
             HttpGet request = new HttpGet(url);
-	    request.setHeader("User-Agent", "darkobasrom");
             HttpResponse response = client.execute(request);
             int len = (int) response.getEntity().getContentLength();
             if ((len >= 0) && (len < 1024 * 1024)) {
@@ -445,7 +444,6 @@ public class UpdateService
             HttpConnectionParams.setSoTimeout(params, 10000);
             HttpClient client = new DefaultHttpClient(params);
             HttpGet request = new HttpGet(url);
-	    request.setHeader("User-Agent", "darkobasrom");
             HttpResponse response = client.execute(request);
             long len = (int) response.getEntity().getContentLength();
             long recv = 0;
