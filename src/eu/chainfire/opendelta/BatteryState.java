@@ -1,6 +1,6 @@
 /* 
  * Copyright (C) 2013-2014 Jorrit "Chainfire" Jongma
- * Copyright (C) 2013-2015 The OmniROM Project
+ * Copyright (C) 2013-2014 The OmniROM Project
  */
 /* 
  * This file is part of OpenDelta.
@@ -25,11 +25,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.BatteryManager;
 
-public class BatteryState implements OnSharedPreferenceChangeListener {
+public class BatteryState {
     public interface OnBatteryStateListener {
         public void onBatteryState(boolean state);
     }
@@ -96,12 +94,5 @@ public class BatteryState implements OnSharedPreferenceChangeListener {
         if (stateLast == null)
             return false;
         return stateLast.booleanValue();
-    }
-
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
-            String key) {
-        chargeOnly = sharedPreferences.getBoolean(SettingsActivity.PREF_CHARGE_ONLY, true);
-        minLevel = Integer.valueOf(sharedPreferences.getString(SettingsActivity.PREF_BATTERY_LEVEL, "50")).intValue();
     }
 }
