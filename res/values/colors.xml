@@ -1,7 +1,7 @@
 <resources>
 
-	<color name="button_text_color">#ff009688</color>
+	<color name="button_text_color">@*android:color/material_deep_teal_500</color>
 	<color name="title_text_color">@android:color/white</color>
-	<color name="title_text_bg">#ff263238</color>
+	<color name="title_text_bg">@*android:color/material_blue_grey_900</color>
 
 </resources>
