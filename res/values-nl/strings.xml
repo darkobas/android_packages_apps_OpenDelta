@@ -12,7 +12,16 @@
   <string name="network_unknown">Anders</string>
   <string name="action_about">Over</string>
   <string name="about_content">
-<! [CDATA [Copyright &copy; © _COPYRIGHT_OPENDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br><br>Oorspronkelijk gemaakt voor <b>Het OmniROM Project</b> <br><br>licentie onder de voorwaarden van de <b>GNU General Public License, versie 3.0 (GPLv3)</b> <br><br>Delta-decodering gebaseerd op <b>xdelta</b>, copyright © &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b> <br>]] ></string>
+<![CDATA[
+        Copyright &copy; _COPYRIGHT_OPENDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
+        <br>
+        Originally created for <b>The OmniROM Project</b><br>
+        <br>
+        Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
+        <br>
+        Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
+    ]]>
+	</string>
   <string name="state_action_none">Uw systeem is up to date.</string>
   <string name="state_action_checking">Controleren op updates &#8230;</string>
   <string name="state_action_checking_md5">Bestand verifiëren &#8230;</string>
