@@ -30,7 +30,7 @@
   <string name="state_action_downloading">Downloaden &#8230;</string>
   <string name="state_action_applying">Toepassen &#8230;</string>
   <string name="state_action_applying_patch">Toepassen &#8230;</string>
-  <string name="state_action_applying_md5">Bestand verifiëren &#8230;</string>
+  <string name="state_action_applying_md5">Bestand toepassen &#8230;</string>
   <string name="state_action_ready">Update is klaar voor installatie.</string>
   <string name="state_error_disk_space">Onvoldoende schijfruimte!</string>
   <string name="state_error_unknown">Onbekende fout.</string>
@@ -41,6 +41,7 @@
   <string name="last_checked_never">Er is nog niet eerder gecontroleerd op updates, zou u willen wat wij het voor u gaan controleren?</string>
   <string name="button_check_now">Controleren op updates</string>
   <string name="button_flash_now">Installeer</string>
+  <!-- updates from 2013/12/18 -->
   <string name="action_secure_mode">Beveilig</string>
   <string name="secure_mode_enabled_title">Veilige modus: ingeschakeld</string>
   <string name="secure_mode_enabled_description"><![CDATA[De cryptografische handtekening van de update zal worden gecontroleerd voor het installeren om de oorsprong te bevestigen en geen extra updates zullen worden geïnstalleerd. Deze modus is alleen compatibel met <b>TWRP</b>.]]></string>
