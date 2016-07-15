@@ -2,16 +2,16 @@
 <resources>
 
 	<!-- Output some debug strings -->
-	<item name="debug_output" type="bool">true</item>
+	<item name="debug_output" type="bool">false</item>
 
 	<!-- Property to read for ROM version -->
-	<string name="property_version">ro.par.version</string>
+	<string name="property_version">ro.omni.version</string>
 
 	<!-- Property to read for device identifier -->
-	<string name="property_device">ro.product.name</string>
+	<string name="property_device">ro.omni.device</string>
 
 	<!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
-	<string name="filename_base">darkobas-</string>
+	<string name="filename_base">omni-%s</string>
 
 	<!-- Path deltas are stored, relative to sdcard root -->
 	<string name="path_base">OpenDelta</string>

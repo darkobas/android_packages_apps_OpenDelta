@@ -97,10 +97,8 @@ public class Config {
                 res.getString(R.string.property_version), "");
         property_device = getProperty(context,
                 res.getString(R.string.property_device), "");
-        filename_base = String.format(Locale.ENGLISH, "%s%s%c%s",
-                res.getString(R.string.filename_base),
-                property_device, '-',
-                 property_version);
+        filename_base = String.format(Locale.ENGLISH,
+                res.getString(R.string.filename_base), property_version);
         path_base = String.format(Locale.ENGLISH, "%s%s%s%s", Environment
                 .getExternalStorageDirectory().getAbsolutePath(),
                 File.separator, res.getString(R.string.path_base),
